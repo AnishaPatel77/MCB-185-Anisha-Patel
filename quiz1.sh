@@ -10,3 +10,7 @@ gunzip -c dictionary.gz | grep "b" | grep "[atirnl]" | grep -v "[bcdefghjkmopqsu
 gunzip -c dictionary.gz | grep "c" | grep "[amodin]" | grep -v "[bcefghjklmopqrstuvwxyz]" | grep -E ".{4,}" 
 
 gunzip -c dictionary.gz | grep "z" | grep "[naoigr]" | grep -v "[bcdefghjklmpqstuvwxyz]" | grep -E ".{4,}" 
+
+gunzip -c jaspar2024_core.transfac.gz | grep "diatoms" | grep "urochordates" | grep "nematodes" | grep "fungi" | grep "insects" | grep "plants" | grep "vertebrates" | sort | uniq -c
+
+echo "names of coauthors: Francesca, Varsha, Avantika"
