@@ -5,12 +5,12 @@ def quadratic(a, b, c):
 	if discriminant < 0:
 		return "no real solution"
 	if discriminant == 0:
-		x_1 = (-b + (discriminant ** 0.5)) / 2 * a
+		x1 = (-b + (discriminant ** 0.5)) / 2 * a
 		return x_1
 	if discriminant > 0:
-		x_1 = (-b + (discriminant ** 0.5)) / 2 * a
-		x_2 = (-b - (discriminant ** 0.5)) / 2 * a
-		return x_1, x_2
+		x1 = (-b + (discriminant ** 0.5)) / 2 * a
+		x2 = (-b - (discriminant ** 0.5)) / 2 * a
+		return x1, x2
 
 print("x-intercept(s):", quadratic(-1, -2, -3)) # no real solution
 print("x-intercept(s):", quadratic(1, 2, 1)) # one root
