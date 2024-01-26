@@ -5,7 +5,7 @@ import math
 def Shannon_entropy(a, c, g, t,):
 	total = a + c + g + t
 	if total <= 0: 
-		return("Error total count must be greater than 0")
+		return "Error total count must be greater than 0"
 	if total > 0: 
 		P_a = a / total
 		P_c = c / total
