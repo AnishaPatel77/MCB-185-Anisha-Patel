@@ -5,8 +5,8 @@
 # with several values of n an k.
 
 
-def factorial(n):
-	if n == 0: 
+def factorial(n, k):
+	if n == 0 and k == 0  
 		return 1
 	fac = 1
 	for i in range(1, n + 1):
