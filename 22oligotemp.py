@@ -1,7 +1,7 @@
 # 22oligotemp.py by Anisha Patel
 
 def oligo_temp(A, C, G, T):
-	oligo = (A + C + G + T) 
+	oligo = A + C + G + T
 	if oligo <= 13:
 		melting_temp = (A + T) * 2 + (G + C) * 4
 	elif oligo > 13:
