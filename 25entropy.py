@@ -3,15 +3,15 @@
 import math 
 
 def Shannon_entropy(a, c, g, t,):
-	total = a + c + g + t
-	if total <= 0: 
+	tot = a + c + g + t
+	if tot <= 0: 
 		return "Error total count must be greater than 0"
-	if total > 0: 
-		P_a = a / total
-		P_c = c / total
-		P_g = g / total
-		P_t = t / total
-		entropy_value = -1 * (P_a * math.log2(P_a) + P_c * math.log2(P_c) + P_g * math.log2(P_g) + P_t * math.log2(P_t))
+	if tot > 0: 
+		P_a = (a / tot) * math.log2(a / tot)
+		P_c = (c / tot) * math.log2(c / tot)
+		P_g = (g / tot) * math.log2(g / tot)
+		P_t = (t / tot) * math.log2(t / tot)
+		entropy_value = -1 * P_a + P_c + P_g + P_t
 		return entropy_value 
 	
 print("H =", Shannon_entropy(1, 2, 3, 4)) 
