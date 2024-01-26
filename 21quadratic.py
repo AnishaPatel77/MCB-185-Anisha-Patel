@@ -6,7 +6,7 @@ def quadratic(a, b, c):
 		return "no real solution"
 	if discriminant == 0:
 		x1 = (-b + (discriminant ** 0.5)) / 2 * a
-		return x_1
+		return x1
 	if discriminant > 0:
 		x1 = (-b + (discriminant ** 0.5)) / 2 * a
 		x2 = (-b - (discriminant ** 0.5)) / 2 * a
