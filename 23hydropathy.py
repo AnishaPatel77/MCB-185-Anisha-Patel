@@ -42,7 +42,7 @@ def Kyte_Doolittle(aa):
 	elif aa == 'Y' or aa == 'y':
 		return -1.30
 	else:
-		return ("Input value not within the amino acid alphabet")
+		return "Input value not within the amino acid alphabet"
 
 	
 print("Kyte-Doolittle hydrophobicity value:", Kyte_Doolittle('A'))
