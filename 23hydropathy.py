@@ -45,10 +45,10 @@ def Kyte_Doolittle(aa):
 		return "Input value not within the amino acid alphabet"
 
 	
-print("Kyte-Doolittle hydrophobicity value:", Kyte_Doolittle('A'))
-print("Kyte-Doolittle hydrophobicity value:", Kyte_Doolittle('D'))
-print("Kyte-Doolittle hydrophobicity value:", Kyte_Doolittle('t'))
-print("Kyte-Doolittle hydrophobicity value:", Kyte_Doolittle('Z')) # value doesn't exist
+print("KD value:", Kyte_Doolittle('A'))
+print("KD value:", Kyte_Doolittle('D'))
+print("KD value:", Kyte_Doolittle('t'))
+print("KD value:", Kyte_Doolittle('Z')) # value doesn't exist
 
 
 
