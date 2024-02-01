@@ -18,6 +18,7 @@ def minchar(s):
 		if ord(c) < mn:
 			mn = ord(c)
 	return mn
+
 			
 name = 'anisha'
 print(checksum(name))
