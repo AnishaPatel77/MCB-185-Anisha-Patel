@@ -1,16 +1,22 @@
 # 35nchoosek.py by Anisha Patel
 
-# Create a function that solves "n choose k": n! / k!(n - k)! and 
-# demonstrate that it works by calling it multiple times
-# with several values of n an k.
+# n! / k!(n - k)!
 
 
-def factorial(n, k):
-	if n == 0 and k == 0  
-		return 1
+def factorial(n):
+	if n == 0: return 1
 	fac = 1
 	for i in range(1, n + 1):
 		fac = fac * i
 	return fac
+
+def nchoosek(n, k):
+	if n == 0 and k == 0: 
+		return 1
+	if n > 0 and k > 0: 
+		return (n * factorial(n)) / (factorial(k)) * factorial(n - k)		
+
 	
-print(factorial(5))
+print(nchoosek(1, 2))
+print(nchoosek(3, 4))
+print(nchoosek(5, 6))
