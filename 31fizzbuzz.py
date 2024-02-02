@@ -5,7 +5,7 @@ for i in range(0, 100):
 		print("FizzBuzz")
 	elif i in range(0, 100, 3):
 		print("Fizz")
-	elif i in range (0, 100, 5): 
+	elif i in range(0, 100, 5): 
 		print("Buzz")
 	else:
 		print(i)
