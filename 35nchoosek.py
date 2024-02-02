@@ -1,10 +1,8 @@
 # 35nchoosek.py by Anisha Patel
 
-# n! / k!(n - k)!
-
-
 def factorial(n):
-	if n == 0: return 1
+	if n == 0: 
+		return 1
 	fac = 1
 	for i in range(1, n + 1):
 		fac = fac * i
@@ -13,10 +11,15 @@ def factorial(n):
 def nchoosek(n, k):
 	if n == 0 and k == 0: 
 		return 1
+	if k > n:
+		return 0
 	if n > 0 and k > 0: 
-		return (n * factorial(n)) / (factorial(k)) * factorial(n - k)		
+		return factorial(n) / (factorial(k) * factorial(n - k))		
 
 	
-print(nchoosek(1, 2))
-print(nchoosek(3, 4))
-print(nchoosek(5, 6))
+print(nchoosek(2, 1))
+print(nchoosek(4, 3))
+print(nchoosek(6, 5))
+print(nchoosek(0, 0))
+
+
