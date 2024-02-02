@@ -2,11 +2,10 @@
 
 
 def fibonacci(n):
-	a1 = 0 
-	b1 = 1
-	for num in range(n):
-		a = a1
-		b = a1 + b1
+	seq = 0, 1
+	
+	for num in range(2, n):
+		nxt_num = seq 
 	return a
 	
 print(fibonacci(10))
