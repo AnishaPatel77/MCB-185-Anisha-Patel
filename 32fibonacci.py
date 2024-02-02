@@ -1,6 +1,6 @@
 # 32fibonacci.py by Anisha Patel
- 
-'''
+
+
 def fibonacci(n):
 	a1 = 0 
 	b1 = 1
@@ -10,7 +10,3 @@ def fibonacci(n):
 	return a
 	
 print(fibonacci(10))
-'''
-for _ in range(10):
-    print(a)
-    a, b = b, a + b
