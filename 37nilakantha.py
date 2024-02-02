@@ -1,9 +1,22 @@
 # 37nilakantha.py by Anisha Patel
 
+def nilakantha(num_iterations):
+	est_pi = 3
+	sign = 1
+	
+	for i in range(1, num_iterations):
+		math = 4 / ((2 * i) * (2 * i + 1) * (2 * i + 2))
+		est_pi = est_pi + sign * math
+		sign = sign * -1
+	return est_pi
+	
+print(nilakantha(10))
+print(nilakantha(100))
+print(nilakantha(1000))
+print(nilakantha(10000))
+print(nilakantha(100000))
 
-# Estimate pi using the Nilakantha series. 
-# Hint: you must figure out how to get the 
-# +/- to flip-flop with each iteration.
 
-Pi = 3 + 4/(2x3x4) - 4/(4x5x6) + 4/(6x7x8) - 4/(8x9x10)
-
+		
+	
+	
