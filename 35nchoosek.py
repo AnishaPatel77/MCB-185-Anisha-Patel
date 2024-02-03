@@ -11,7 +11,7 @@ def factorial(n):
 def nchoosek(n, k):
 	if n == 0 and k == 0: 
 		return 1
-	if n <=k:
+	if n <= k:
 		return 0
 	if n > 0 and k > 0: 
 		return factorial(n) / (factorial(k) * factorial(n - k))		
