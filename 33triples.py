@@ -6,4 +6,3 @@ for i in range(1, limit):
 		n = (i ** 2 + j ** 2) ** 0.5
 		if n == n // 1:
 			print(i, j, n)
-
