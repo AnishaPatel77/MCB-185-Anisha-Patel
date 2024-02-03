@@ -1,11 +1,14 @@
 # 32fibonacci.py by Anisha Patel
 
-
 def fibonacci(n):
-	seq = 0, 1
+	num = 0
+	nxt_num = 1
 	
-	for num in range(2, n):
-		nxt_num = seq 
-	return a
-	
+	for i in range(1, n):
+		print(num, end=", ")
+		temp_num = num
+		num = nxt_num
+		nxt_num = nxt_num + temp_num 
+	return num
+
 print(fibonacci(10))
