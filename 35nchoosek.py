@@ -16,7 +16,6 @@ def nchoosek(n, k):
 	if n > 0 and k > 0: 
 		return factorial(n) / (factorial(k) * factorial(n - k))		
 
-	
 print(nchoosek(4, 2))
 print(nchoosek(4, 3))
 print(nchoosek(6, 5))
