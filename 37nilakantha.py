@@ -15,8 +15,3 @@ print(nilakantha(100))
 print(nilakantha(1000))
 print(nilakantha(10000))
 print(nilakantha(100000))
-
-
-		
-	
-	
