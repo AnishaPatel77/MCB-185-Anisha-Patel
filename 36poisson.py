@@ -1,5 +1,7 @@
 # 36poisson.py by Anisha Patel
 
+import math 
+
 def factorial(n):
 	if n == 0: 
 		return 1
@@ -9,8 +11,7 @@ def factorial(n):
 	return fac
 	
 def poisson(n, k):
-	e = 2.7182818284590452353602874713527
-	prob = ((n ** k) * (e ** -n)) / factorial(k)
+	prob = ((n ** k) * (math.e ** -n)) / factorial(k)
 	return prob
 	
 print(poisson(2, 1))
