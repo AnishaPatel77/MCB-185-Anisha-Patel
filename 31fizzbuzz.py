@@ -1,11 +1,11 @@
 # 31fizzbuzz.py by Anisha Patel
-
-for i in range(0, 100):
-	if i in range(0, 100, 5) and i in range(0, 100, 3):
+	
+for value in range(0, 101): 
+	if value % 3 == 0 and value % 5 == 0:
 		print("FizzBuzz")
-	elif i in range(0, 100, 3):
+	elif value % 3 == 0: 
 		print("Fizz")
-	elif i in range(0, 100, 5): 
+	elif value % 5 == 0:
 		print("Buzz")
 	else:
-		print(i)
+		print(value)
