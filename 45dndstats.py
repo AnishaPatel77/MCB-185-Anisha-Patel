@@ -10,36 +10,36 @@ for i in range(limit):
 	for j in range(3):
 		dice = random.randint(1, 6)
 		sum += dice
-print (sum / limit)
+print(sum / limit)
 
 # roll 3D6r1
 sum1 = 0
 for i in range(limit): 
 	for j in range(3):
-		dice_r1 = random.randint (1, 6)
+		dice_r1 = random.randint(1, 6)
 		if dice_r1 == 1:
-			dice_r1 == random.randint (1, 6) 
+			dice_r1 == random.randint(1, 6) 
 		sum1 += dice_r1
-print (sum1 / limit)
+print(sum1 / limit)
 
 # roll 3D6×2
 sum2 = 0
 for i in range(limit): 
 	for j in range(3):
 		d1 = random.randint(1, 6)
-		d2 = random.randint (1, 6)
+		d2 = random.randint(1, 6)
 		if d1 >= d2: sum2 += d1
 		else: sum2 += d2
-print (sum2 / limit)
+print(sum2 / limit)
 
 # roll 4D6d1
 sum3 = 0
-for i in range (4):
+for i in range(4):
 	for j in range(4):
-		d1 = random.randint (1, 6)
-		d2 = random.randint (1, 6)
-		d3 = random.randint (1, 6)
-		d4 = random.randint (1, 6)
+		d1 = random.randint(1, 6)
+		d2 = random.randint(1, 6)
+		d3 = random.randint(1, 6)
+		d4 = random.randint(1, 6)
 		
 		min_roll = d1
 		if d2 < min_roll: min_roll = d2
@@ -52,4 +52,4 @@ for i in range (4):
 		if d3 != min_roll: total += d3 
 		if d4 != min_roll: total += d4 
 		sum3 += total
-print (sum3 / limit)
+print(sum3 / limit)
