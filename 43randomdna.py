@@ -1,10 +1,10 @@
-# 43randomdna.py by Anisha Patel
+# 43randomdna.py by Anisha Patel & Varsha Thalladi
 
 import random 
 
-def fasta_seq(num_seq, output_range):
-	for i in range(output_range):
-    	letters = (random.choice('ACGT'), end='')
-    	
-	return 
+for i in range(3):
+	print(f'>seq-{i + 1}')
+	for i in range(random.randint(50, 60)):
+		print(random.choice('ACGT'), end='')
+	print()
  
