@@ -2,7 +2,7 @@
 
 import random 
 
-limit = 10 
+limit = 1000
 
 # roll 3D6: roll 3 six-sided dice
 sum0 = 0 

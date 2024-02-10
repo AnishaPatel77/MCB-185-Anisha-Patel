@@ -33,6 +33,6 @@ for i in range(limit):
 				stable += 1
 				break
 
-print(f'revived: {revive / limit}')
-print(f'died: {died / limit}')
-print(f'stabilized: {stable / limit}')
+print("revived:", revive / limit)
+print("died:", died / limit)
+print("stabilized:", stable / limit)
