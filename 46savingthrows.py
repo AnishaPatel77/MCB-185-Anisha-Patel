@@ -17,7 +17,7 @@ def normal_roll(value):
 	
 print("Normal DC 5:", normal_roll(5))
 print("Normal DC 10:", normal_roll(10))
-print("Normal DC 15:", normal_roll (15))
+print("Normal DC 15:", normal_roll(15))
 
 def advantage_roll(value):
 	fail = 0 
