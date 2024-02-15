@@ -10,10 +10,10 @@ G = int(sys.argv[3])
 B = int(sys.argv[4])
 
 def diff(P, Q):
-    d = 0
-    for p, q in zip(P, Q):
-        d += abs(p - q)
-    return d
+	d = 0
+	for p, q in zip(P, Q):
+		d += abs(p - q)
+	return d
     
 def fcolor(colorfile, R, G, B):
 	mini = 765
@@ -36,7 +36,4 @@ def fcolor(colorfile, R, G, B):
 				
 	return closest
 	
-print(fcolor (colorfile, R, G, B))
-
-
-
+print(fcolor(colorfile, R, G, B))

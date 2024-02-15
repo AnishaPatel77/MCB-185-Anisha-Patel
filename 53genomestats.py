@@ -70,6 +70,3 @@ def median(vals):
 		med = vals[middle]
 	return med 
 print('med:', median(distance))
-
-
-		        
