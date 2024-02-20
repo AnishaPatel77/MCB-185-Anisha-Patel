@@ -13,10 +13,10 @@ def bday_calendar(trials, days, people):
 	shared_bday_trials = 0 
 	for i in range(trials):
 		calendar = []
-		for i in range(days):
+		for j in range(days):
 			calendar.append(0)
 	
-		for k in range(people):
+		for j in range(people):
 			bday = random.randint(0, days - 1)
 			calendar[bday] += 1
 	
