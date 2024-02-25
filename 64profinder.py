@@ -37,7 +37,7 @@ for name, seq in mcb185.read_fasta(fas):
 
 	for i in range(len(proteins)):
 		protein = proteins[i]
-		if len(protein) >= min_len and protein[0] == 'M':
+		if len(protein) >= min_len and protein[0] == 'M' and protein[-1] == '*':
 			identifier = f'{name}-prot-{i}'
 			output_proteins.append((identifier, protein))
 
