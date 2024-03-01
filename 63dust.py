@@ -1,6 +1,6 @@
 # 63dust.py by Anisha Patel, Varsha, & Avantika
 
-# python3 63dust.py ../MCB185/data/A.thaliana.fa.gz 20 1.4
+# python3 63dust.py ecoli.fna.gz 20 1.4
 
 import sys 
 import math

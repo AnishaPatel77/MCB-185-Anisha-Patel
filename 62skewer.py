@@ -1,6 +1,6 @@
 # 62skewer.py by Anisha Patel, Varsha, & Avantika
 
-# python3 62skewer.py ../MCB185/data/A.thaliana.fa.gz 1000
+# python3 62skewer.py ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.fna.gz 1000
 
 import dogma
 import sys

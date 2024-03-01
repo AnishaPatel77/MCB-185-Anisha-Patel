@@ -70,7 +70,7 @@ def gc_skew(seq):
 	if c + g == 0: return 0
 	return (g - c) / (g + c)
 	
-def Kyte_Doolittle(aa):
+def kyte_doolittle(aa):
 	if aa == 'A' or aa == 'a':
 		return 1.80
 	elif aa == 'C' or aa == 'c':
@@ -88,12 +88,12 @@ def Kyte_Doolittle(aa):
 	elif aa == 'I' or aa == 'i':
 		return 4.50
 	elif aa == 'K' or aa == 'k':
-		preturn -3.90
+		return -3.90
 	elif aa == 'L' or aa == 'l':
 		return 3.80
 	elif aa == 'M' or aa == 'm':
 		return 1.90
-	elif aa == 'N 'or aa == 'n':
+	elif aa == 'N' or aa == 'n':
 		return -3.50
 	elif aa == 'P' or aa == 'p':
 		return -1.60
