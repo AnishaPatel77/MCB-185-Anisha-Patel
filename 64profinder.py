@@ -29,7 +29,7 @@ def find_proteins(trans_seq, min_len):
 
 def six_frame_translation(dna, min_len):
 	proteins = []
-	frames = [dna, dogma.revcomp(dna)]  
+	frames = [dna, dogma.revcomp(dna)]
 
 	for dna_seq in frames:
 		for frame in range(3):
