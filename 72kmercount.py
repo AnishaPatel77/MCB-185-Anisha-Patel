@@ -18,4 +18,4 @@ import itertools
 for nts in itertools.product('ACGT', repeat=k):
 	kmer = ''.join(nts)
 	if kmer in kcount: print(kmer, kcount[kmer])
-	else:              print(kmer, 0)
+	else: print(kmer, 0)
