@@ -27,15 +27,12 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 				else:
 					kcount[kmer] += 1
 		
-		all_kmer = []
+		missing_kmer = []
+		
 		for nts in itertools.product('ACGT', repeat=k):
 			kmer_list = list(nts)
 			kmer = ''.join(kmer_list)
-			all_kmer.append(kmer)
-			
-		missing_kmer = []
-		for kmer in all_kmer:
-			if kmer not in kcount:
+			if kmer not in kcount: 
 				missing_kmer.append(kmer)
 		
 		if missing_kmer:
