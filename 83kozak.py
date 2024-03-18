@@ -2,7 +2,6 @@
 
 import sys
 import gzip
-import dogma
 import mcb185
 
 
