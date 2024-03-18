@@ -152,3 +152,11 @@ def hydropathy(seq):
 	for aa in seq:
 		s += kdh[aa]
 	return s / len(seq)
+
+def tm(A, C, G, T):
+	oligo = A + C + G + T
+	if oligo <= 13:
+		melting_temp = (A + T) * 2 + (G + C) * 4
+	elif oligo > 13:
+		melting_temp = (64.9 + (41 * (G + C - 16.4))) / (A + T + G + C)
+	return melting_temp 
