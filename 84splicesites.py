@@ -70,8 +70,3 @@ for c, b, e, n, s in introns:
 				
 print_pwm(acc, 'ag001', 'ACC', 'splice acceptor')
 print_pwm(don, 'ag002', 'DON', 'splice donor')
-		
-		
-		
-		
-		
