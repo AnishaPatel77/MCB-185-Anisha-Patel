@@ -24,8 +24,8 @@ catalog.append({'Name': name, 'Length': length, 'Sequence': seq, 'Description': 
 
 catalog = read_catalog('primers.csv')
 for primer in catalog:
-    print(primer['Name'], primer['Description'])
-    
+	print(primer['Name'], primer['Description'])
+
 kcount = {}
 for i in range(len(seq) -k +1):
 	kmer = seq[i:i+k]
