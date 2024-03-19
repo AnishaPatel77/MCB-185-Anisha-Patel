@@ -2,33 +2,33 @@
 
 # python3 62skewer.py ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.fna.gz 1000
 
-import dogma
-import sys
+seq = 'ACGTACGTGGGGGACGTACGTCCCCC'
+print(seq)
+w = 10
 
-seq = sys.argv[1]
-w = int(sys.argv[2])
+g = seq[0:w].count('G')
+c = seq[0:w].count('C')
 
-def slider(seq, w):
-	w1 = seq[:w]
-	new_gc_comp = dogma.gc_comp(w1)
-	new_gc_skew = dogma.gc_skew(w1)
+print(f'0\t{(g + c) / w:.3f}\t{(g - c) / (g + c):.3f}')
+
+for i in range(0, len(seq) - w):
+	leaving_nt = seq[i]
+	new_nt = seq[i+w]
+	if leaving_nt == 'G':
+		g -= 1
+	elif leaving_nt == 'C':
+		c -= 1
+		
+	if new_nt == 'G':
+		g += 1
+	elif new_nt == 'C':
+		c += 1
+		
+	if g + c == 0:
+		skew = 0
+	else:
+		skew = (g - c) / (g + c)
+	print(f'{i+1}\t{(g + c) / w:.3f}\t{skew:.3f}')
 	
-	for i in range(1, len(seq) - w + 1):
-		lnt = seq[i - 1]
-		rnt = seq[i + w - 1]
-		
-		if lnt == 'C' or lnt == 'G':
-			new_gc_comp -= 1 / w
-			new_gc_skew -= 2 / w
-			
-		if rnt == 'C' or rnt == 'G':
-			new_gc_comp += 1 / w
-			new_gc_skew += 2 / w
-		
-	return new_gc_comp, new_gc_skew
-		
-new_gc_comp, new_gc_skew = slider(seq, w)
 
-print(f'gc comp: {new_gc_comp: .3f}')
-print(f'gc skew: {new_gc_skew: .3f}')
 
